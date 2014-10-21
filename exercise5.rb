@@ -1,5 +1,10 @@
-def convert(f)
 
+
+def convert(f)
+	c = (f - 32)*5.0/9
+	puts "The temp is #{c.round(2)}"
 end
-puts "What is the temperature in Fahrenheit?"
-what_is_f = gets.chomp.to_i
+puts "what is the temperature"
+convert(gets.chomp.to_i)
+
+
